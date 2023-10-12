@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5217773993916636019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5217773993916636021}
+  - component: {fileID: 5217773993916636020}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5217773993916636021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217773993916636019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5217773993916636020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217773993916636019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a83111b199e8d0449861fb4dd4d0f62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  isTopDimension: 1
+  isCameraMoving: 0
+  isGamePaused: 0
+  currentLives: 3
+  addLifePointsSpan: 30
+  currentLevel: 1
+  maxLevel: 10
+  scoreToMaxLevel: 100
+  isBossSpawned: 0
+  player_GO: {fileID: 5685435630208875688, guid: 777e207f336ce5540aa929bb1549be75, type: 3}
+  playerInScene: {fileID: 0}
+  playerSpawnPos: {fileID: 0}
+  playerRespawnTime: 2
+  playerIsRespawning: 0
+  GAMEOVERDELAYINSECONDS: 2
+  cageSize: {x: 0, y: 0, z: 0}
+  cage: {fileID: 0}
+  _scoreManager: {fileID: 0}
+  _canvasManager: {fileID: 0}
+  _enemyManager: {fileID: 0}
+  _obstacleManager: {fileID: 0}

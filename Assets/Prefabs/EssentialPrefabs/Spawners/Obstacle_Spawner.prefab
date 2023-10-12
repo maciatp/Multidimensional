@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2722035840494993940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2722035840494993942}
+  - component: {fileID: 2722035840494993941}
+  m_Layer: 0
+  m_Name: Obstacle_Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2722035840494993942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2722035840494993940}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 22.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2722035840494993941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2722035840494993940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a445e84f9704c32498d435e9227970a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnObstacles: 1
+  speed: 3
+  spawnCounter: 0
+  spawnTimeSpan: 7.8
+  _gameManager: {fileID: 0}
+  obstacles_GO:
+  - {fileID: 6918363527935886019, guid: b953fa217d72865478c468da0be5ae0e, type: 3}
+  - {fileID: 3853294631273764885, guid: 2810e96708744814f8f0e9bcbd9a1c1f, type: 3}
+  - {fileID: 978540378213489565, guid: 1a2cddf6d57d4c34b8b07695f37d91b0, type: 3}
+  - {fileID: 8017368952290921065, guid: 5c5bc126288fc594099be3b8781ebbb6, type: 3}
+  - {fileID: 6780817563446404835, guid: 1b3a6831c57c9e14aa4d86d05740dd73, type: 3}
+  - {fileID: 7398929763721269569, guid: 0cddd5d0580b5de4ea032466b0ace8b9, type: 3}
+  - {fileID: 4528351074111457740, guid: 26c1182a92f00ca4ab24cbcfae60ab6a, type: 3}
+  - {fileID: 6817056988015987200, guid: c083b50045794da4b8ce2ebec387cae3, type: 3}
+  - {fileID: 2113363899290117618, guid: 6a478133f258fc045810ae23ea3e8ccb, type: 3}
+  - {fileID: 3444463271852244027, guid: dc8e497948a6e484c8d0161456f101c2, type: 3}
+  - {fileID: 3717157506949745686, guid: 386532d9a198ca344ac85c266ee3d3c1, type: 3}
+  - {fileID: 5644411063998808099, guid: b7deaa8640fd3684fbd6ab680632df5a, type: 3}
+  - {fileID: 3333432308954898166, guid: 0a7850fb60e09ac4c8f9270dfac00aa3, type: 3}
+  obstaclesInScene: []
+  dangerousObstaclesList: []
+  UI_Advisor_Script: {fileID: 0}
