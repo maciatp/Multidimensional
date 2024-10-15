@@ -11,7 +11,8 @@
                     "id": "372b9550-fa9e-4ca9-9643-0386a210f7f8",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Aim",
@@ -19,7 +20,8 @@
                     "id": "7347d281-6a23-4060-ac28-7712f12ff73d",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ChangeDimension",
@@ -27,7 +29,8 @@
                     "id": "9ccb1286-4eda-4e6d-969a-89d4898aa18b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Fire",
@@ -35,7 +38,8 @@
                     "id": "cd6e1e4b-1236-4089-b7f2-9bb7da58d536",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MousePosition",
@@ -43,7 +47,8 @@
                     "id": "de82ba5b-b94d-4c0a-8129-0b9430370be4",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ActivateSuperMode",
@@ -51,7 +56,8 @@
                     "id": "8849301c-1f0a-42ee-8212-420a22176c5a",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Dash",
@@ -59,7 +65,8 @@
                     "id": "05effd79-558c-4a84-a288-dd403c010c27",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
