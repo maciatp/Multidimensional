@@ -386,15 +386,19 @@ public class Player_Controller : MonoBehaviour
         if(_gameManager_Script.IsTopDimension)
         {
             Vector3 clampedPos = transform.position;
-            clampedPos.x = Mathf.Clamp(clampedPos.x, (-cage.transform.localScale.x / 2) + (_meshRenderer.bounds.size.x / 2), (cage.transform.localScale.x / 2) - (_meshRenderer.bounds.size.x/2));
-            clampedPos.z = Mathf.Clamp(clampedPos.z, (-cage.transform.localScale.z / 2) + (_meshRenderer.bounds.size.z / 2), (cage.transform.localScale.z / 2) - (_meshRenderer.bounds.size.z/2));
+
+            clampedPos.x = Mathf.Clamp(clampedPos.x, (-cage.transform.lossyScale.x / 2) + (_meshRenderer.bounds.size.x / 2), (cage.transform.lossyScale.x / 2) - (_meshRenderer.bounds.size.x / 2));
+            //clampedPos.z = Mathf.Clamp(clampedPos.z, (-cage.transform.lossyScale.z/2) + (_meshRenderer.bounds.size.z / 2), (cage.transform.lossyScale.z / 2) - (_meshRenderer.bounds.size.z / 2));   //BUG DE UNITY, LE tengo que pasar la lossyScaleY para que coja la lossyScaleZ.
+            clampedPos.z = Mathf.Clamp(clampedPos.z, (-cage.transform.lossyScale.y / 2) + (_meshRenderer.bounds.size.z / 2), (cage.transform.lossyScale.y / 2) - (_meshRenderer.bounds.size.z / 2));    //FIX TEMPORAL DEL BUG ANTERIOR (cambio de z por y)
             transform.position = clampedPos;
         }
         else
         {
             Vector3 clampedPos = transform.position;
-            clampedPos.y = Mathf.Clamp(clampedPos.y, (-cage.transform.localScale.y / 2) +(_meshRenderer.bounds.size.y/2), (cage.transform.localScale.y / 2) - (_meshRenderer.bounds.size.y/2));
-            clampedPos.z = Mathf.Clamp(clampedPos.z, (-cage.transform.localScale.z / 2) +(_meshRenderer.bounds.size.y/2), (cage.transform.localScale.z / 2) - (_meshRenderer.bounds.size.z/2));
+            //clampedPos.y = Mathf.Clamp(clampedPos.y, (-cage.transform.lossyScale.y / 2) +(_meshRenderer.bounds.size.y/2), (cage.transform.lossyScale.y / 2) - (_meshRenderer.bounds.size.y/2));  //BUG DE UNITY, LE tengo que pasar la lossyScaleY para que coja la lossyScaleZ.
+            clampedPos.y = Mathf.Clamp(clampedPos.y, (-cage.transform.lossyScale.z / 2) +(_meshRenderer.bounds.size.y/2), (cage.transform.lossyScale.z / 2) - (_meshRenderer.bounds.size.y/2));    //FIX TEMPORAL AL BUG ANTERIOR (Cambio Y por Z)
+            //clampedPos.z = Mathf.Clamp(clampedPos.z, (-cage.transform.lossyScale.z / 2) +(_meshRenderer.bounds.size.y/2), (cage.transform.lossyScale.z / 2) - (_meshRenderer.bounds.size.z/2));  //BUG DE UNITY, LE tengo que pasar la lossyScalez para que coja la lossyScaleY.
+            clampedPos.z = Mathf.Clamp(clampedPos.z, (-cage.transform.lossyScale.y / 2) +(_meshRenderer.bounds.size.y/2), (cage.transform.lossyScale.y / 2) - (_meshRenderer.bounds.size.z/2));     //FIX TEMPORAL AL BUG ANTERIOR (Cambio Z por Y)
             transform.position = clampedPos;
         }
     }
